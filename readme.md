@@ -67,7 +67,7 @@
 
 ## 后端部分
 
-**后端系统依赖：**主要基于Maven配置，导入到IDEA即可完成自动安装 记得提前下载Maven
+**后端系统依赖**：主要基于Maven配置，导入到IDEA即可完成自动安装 记得提前下载Maven
 
 依赖安装完毕后，记得去Start启动类中修改对应的数据库连接
 
@@ -104,9 +104,9 @@ final_front：前端系统代码
 **nuxt内网部署**
 
 * 执行到front-manager目录下执行`npm build `命令
-* 将<img src="C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20220424190653200.png" alt="image-20220424190653200" style="zoom:50%;" />这几个文件，拷到服务器的某个文件夹下
+* 将<img src="https://lian-tuchuang.oss-cn-beijing.aliyuncs.com/img/20220512115628.png" alt="image-20220424190653200" style="zoom:50%;" />这几个文件，拷到服务器的某个文件夹下
 * 服务器执行`npm install --production`命令，完成依赖安装 （服务器需要提前安装好npm）
-* 执行`npm start`命令，当出现这个->![image-20220424190822942](C:/Users/Lenovo/AppData/Roaming/Typora/typora-user-images/image-20220424190822942.png)说明部署成功啦！
+* 执行`npm start`命令，当出现这个->![image-20220424190822942](https://lian-tuchuang.oss-cn-beijing.aliyuncs.com/img/20220512115630.png)说明部署成功啦！
 
 * pm2进程守护
 
@@ -142,7 +142,7 @@ final_front：前端系统代码
 	server
 	{
 		listen 80; #监听端口
-		server_name _; 
+		server_name 127.0.0.1; 
 		location / {
 			proxy_pass   http://nuxtserver1; #一定要加这个 完成代理配置
 			index  index.html index.htm;
