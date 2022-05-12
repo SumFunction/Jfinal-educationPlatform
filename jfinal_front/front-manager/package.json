@@ -1,0 +1,37 @@
+{
+  "name": "name",
+  "version": "1.0.0",
+  "description": "{{ description }}",
+  "author": "{{ author }}",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env BASE_URL=http://127.0.0.1:8001 NODE_ENV=development nuxt",
+    "start": "cross-env BASE_URL=http://101.43.205.252:80 NODE_ENV=production nuxt start",
+    "build": "cross-env BASE_URL=http://101.43.205.252:80 NODE_ENV=production nuxt build",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cross-env": "^7.0.3",
+    "element-ui": "^2.15.6",
+    "js-cookie": "^3.0.1",
+    "nuxt": "^2.0.0",
+    "vue-awesome-swiper": "^3.1.3",
+    "vue-qriously": "^1.1.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^4.19.1",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.0.0"
+  },
+  "config": {
+    "nuxt": {
+      "host": "127.0.0.1",
+      "port": "3000"
+    }
+  }
+}
